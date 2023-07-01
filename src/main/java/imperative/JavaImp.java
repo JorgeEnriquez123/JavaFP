@@ -38,9 +38,9 @@ public class JavaImp {
     }
 
     static class Bear {
-        private String name;
-        private int age;
-        private Species species;
+        private final String name;
+        private final int age;
+        private final Species species;
 
         public Bear(String name, int age, Species species) {
             this.name = name;
