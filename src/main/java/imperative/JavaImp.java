@@ -2,6 +2,7 @@ package imperative;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 import static imperative.JavaImp.Species.*;
 
@@ -34,6 +35,11 @@ public class JavaImp {
         System.out.println("// DECLARATIVE APPROACH");
         bears.stream()
                 .filter(bear -> POLAR.equals(bear.species))
+                .forEach(System.out::println);
+        // --------------- THEY ARE THE SAME ----------------------------
+        Predicate<Bear> bearPredicate = bear -> POLAR.equals(bear.species);
+        bears.stream()
+                .filter(bearPredicate)
                 .forEach(System.out::println);
     }
 
