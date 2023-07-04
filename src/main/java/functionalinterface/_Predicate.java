@@ -32,7 +32,7 @@ public class _Predicate {
 
     }
 
-    static class Bear{
+    static private class Bear{
         private final String name;
         private final Species species;
 

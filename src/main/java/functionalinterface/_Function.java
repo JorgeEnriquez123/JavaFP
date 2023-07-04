@@ -61,7 +61,7 @@ public class _Function {
     // ? -------------------------------
 
     // * ---- Consumer<T> ------
-    static class Bear{
+    static private class Bear{
         private final String name;
         private final int age;
 
